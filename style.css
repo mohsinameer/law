@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+:root {
+    --primaryColor: #e61d25;
+    --SecondyColor: #101828;
+}
+
+* {
+    font-family: "Sora", sans-serif;
+
+}
+
+header {
+    background: var(--SecondyColor);
+}
+
+.menu>ul>li>a {
+    color: #fff !important;
+    font-size: 14px !important;
+    margin-right: 20px;
+}
+
+.menu>ul>li>a:hover {
+    background: #202b41;
+    border-radius: 7px;
+}
+
+.contactInfo {
+    display: flex;
+    gap: 10px;
+}
+
+.contactInfo button:first-child {
+    color: white;
+    height: 38px;
+    width: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: #667085 !important;
+}
+
+.contactInfo button:nth-child(2) {
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Header Closed  */
+
+/* Banner Section Start */
+
+#banner {
+    background: linear-gradient(261.99deg, #ffe3dd 2.82%, #fff8da 17.1%, rgba(255, 249, 221, 0) 31.78%, hsla(0, 100%, 90%, .04) 50.27%, rgba(255, 249, 221, .35) 67.28%, #ffeee9 77.89%, rgba(255, 238, 233, .14) 91.09%);
+}
+#bannerSlider .carousel-indicators [data-bs-target]{
+width: 12px;
+height: 12px;
+border-radius: 50%;
+opacity: 1;
+background-color: black;
+}
+#bannerSlider .carousel-indicators{
+    bottom: -70px;
+}
+#bannerSlider button.active{
+    background-color: red !important;
+}
+
+/* Banner Section End */
+
+/* Banner Section Form Start */
+
+#banner form{
+    background-color: var(--SecondyColor);
+padding: 1rem;
+}
+
+/* Banner Section Form Start */
+input, select{
+    padding: 11px!important;
+}
+
+.box1>p{
+    font-size: 20px;
+    padding: 16px;
+}
+.card-img-top {
+    padding: 15px;
+}
+.card-body {
+    text-align: center;
+}
+.card-text {
+    padding: 10px 0;
+}
+
+.box1 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid transparent; /* Initially transparent border */
+transition: 1s;
+}
+
+.box1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    background-color: black;
+    transition: left 0.3s ease;
+}
+
+.box1:hover::before {
+    left: 100;
+    width: 100%;
+}
+.box1:hover{
+    transform: translateY(-10px);
+}
+.box2{
+    background: url('https://www.lawpreptutorial.com/images/courses/courses-card-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.box2-card{
+
+background: linear-gradient(106.78deg, #ffefab 10.51%, #f1c4c4 80.72%);
+    padding: 20px;
+}
+.box2-content1>p{
+    font-family: "Train One", system-ui!important;
+    font-size: 34px;
+    padding: 10px;
+    text-align: end;
+    line-height: 22px;
+    color: #667085;
+}
+.box2-content2{
+    margin-top: 80px;
+}
+
+.box2-content2>h6{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.box2-content2>p{
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #667085;
+}
+
+.box2-content2>button{
+    margin: 10px 10px 10px 0;
+    
+}
+
+.choose-content>h5{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.choose-content>p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #667085;
+
+}
+.mentor>h5{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.mentor>p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #667085;
+
+}
+.mentor-box-content{
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+
+}
+.mentor-box-content>h6{
+    color: #e61d25;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+}
+.mentor-box-content>p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+
+}
+
+.owl-dot.active{
+    color: red !important;
+}
+
+ /* Recent News Section  */
+
+.news-content>h5{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+
+}
+.news-content>p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #667085;
+}
+
+.news-btn{
+    margin-top: 40px;
+}
+
+
+/* Footer Section */
+
+       .footer {
+            background-color: #101010;
+            color: #cccccc;
+            padding: 40px 0;
+        }
+        .footer .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .footer .important-link, .footer .contact-us {
+            margin-bottom: 20px;
+        }
+        .footer a {
+            color: #cccccc;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            font-weight: normal !important;
+        }
+        
+        .footer-bottom {
+            background-color: #090909;
+            color: #666666;
+            padding: 20px 0;
+            text-align: center;
+        }
+       .important-link ul a {
+        margin-bottom: 20px !important;
+            position: relative;
+        }
+       .important-link ul li {
+        margin-bottom: 10px !important;
+        }
+
+       .blog-link li {
+        margin-bottom: 10px !important;
+        }
+
+        .border {
+            width: 0%;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            bottom: o;
+            right: 0;
+            transition: 1s ease-in-out;
+            visibility:hidden;
+        }
+
+        .important-link ul li a:hover .border {
+            visibility:visible;
+            width: 100%;
+            left: 0;
+        }
